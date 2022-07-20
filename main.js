@@ -114,6 +114,7 @@ function guessPackage(trackingNumber) {
 }
 
 // testing start
+
 function getNameInputValue() {
   // @ts-ignore
   let inputVal = document.getElementById('myNameInput').value;
@@ -139,11 +140,11 @@ function filterPriority() {
   currentPackages = currentPackages.filter(p => p.priority)
   drawPackages()
 }
+
 function filterFragile() {
   currentPackages = currentPackages.filter(p => p.fragile)
   drawPackages()
 }
-
 
 function resetPackages() {
   currentPackages = packages
