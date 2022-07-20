@@ -120,6 +120,9 @@ function getNameInputValue() {
   let inputVal = document.getElementById('myNameInput').value;
   let foundPackage = currentPackages.find(p => p.to == inputVal);
   console.log(foundPackage);
+
+  drawPackages()
+
 }
  
 function getTrackInputValue() {
